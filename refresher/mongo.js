@@ -10,7 +10,6 @@ const createProduct = async (req, res, next) => {
   };
   const client = new MongoClient(url);
 
-
   try {
     await client.connect();
     const db = client.db();

@@ -9,8 +9,6 @@ mongoose.connect('mongodb+srv://manu:dHOLFf65AU83hyUl@cluster0-9a37x.mongodb.net
     console.log('Connection Failed');
 });
 
-
-
 const createProduct = async (req, res, next) => {
     const createProduct = new Product({
         name: req.body.name,
